@@ -217,14 +217,14 @@ var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
  function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   var returnedArr = [];
-var op = 1;
+var operator = 1;
  var sec = `The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of 120.`;
 
 for(var i = 0; i<dynamicArray.length;i++){
-  op = multiply(op,i)[0];
+  operator = multiply(operator,dynamicArray[i])[0];
 
 }
-returnedArr.push(op);
+returnedArr.push(operator);
 returnedArr.push(sec);
 
 return returnedArr;
